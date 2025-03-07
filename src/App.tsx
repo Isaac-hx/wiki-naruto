@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router";
-import Hero from "./components/Hero/Hero";
 import Home from "./pages/Home/Home";
-import Detail from "./pages/detail/Detail";
+import Detail from "./pages/Detail/Detail";
 
 function App() {
   return (

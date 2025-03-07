@@ -1,11 +1,11 @@
-interface ArrayCharacter{
-    id:number;
-    name:string;
-    images:string[]
+export interface ArrayCharacter {
+  id: number;
+  name: string;
+  images: string[];
 }
 
 export interface Character {
-  characters?:ArrayCharacter[];
+  characters?: ArrayCharacter[];
   currentPage?: number;
   pageSize?: number;
   total?: number;
