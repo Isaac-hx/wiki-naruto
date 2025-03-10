@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
-import { ArrayCharacter, Character } from "../../types/type";
-import { fetchCharacterById, fetchCharacters } from "../../services/api";
+import { ArrayCharacter } from "../../types/type";
+import { fetchCharacterById } from "../../services/api";
 import CardContainer from "../../components/CardContainer";
 import CardHeader from "../../components/CardHeader";
 import CardFooter from "../../components/CardFooter";
