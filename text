@@ -1,0 +1,334 @@
+{/* Character Details */}
+<div className="lg:col-span-2 space-y-6">
+  <div className="space-y-2">
+    <div className="flex items-center justify-between">
+      <h1 className="text-3xl font-bold">Naruto Uzumaki</h1>
+      <div className="flex gap-2">
+        <Badge>Protagonist</Badge>
+        <Badge variant="outline">Konohagakure</Badge>
+      </div>
+    </div>
+    <p className="text-muted-foreground">
+      The Seventh Hokage (七代目火影, Nanadaime Hokage) of Konohagakure and a
+      descendant of the Uzumaki clan.
+    </p>
+  </div>
+
+  <Tabs defaultValue="personal" className="w-full">
+    <TabsList className="grid w-full grid-cols-4">
+      <TabsTrigger value="personal">Personal</TabsTrigger>
+      <TabsTrigger value="chakra">Chakra</TabsTrigger>
+      <TabsTrigger value="abilities">Abilities</TabsTrigger>
+      <TabsTrigger value="history">History</TabsTrigger>
+    </TabsList>
+
+    {/* Personal Tab */}
+    <TabsContent value="personal" className="space-y-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>Personal Details</CardTitle>
+          <CardDescription>
+            Background and personal information
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div>
+            <h3 className="font-semibold mb-2">Personality</h3>
+            <p>
+              Naruto is characterized as boisterous, exuberant, and unorthodox.
+              He inherited his mother's verbal tic, ending most of his sentences
+              with "Dattebayo!" (だってばよ!) when excited or frustrated.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Family</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Minato Namikaze (Father, deceased)</li>
+              <li>Kushina Uzumaki (Mother, deceased)</li>
+              <li>Hinata Hyuga (Wife)</li>
+              <li>Boruto Uzumaki (Son)</li>
+              <li>Himawari Uzumaki (Daughter)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Ninja Rank</h3>
+            <p>Hokage (formerly Genin)</p>
+          </div>
+        </CardContent>
+      </Card>
+    </TabsContent>
+
+    {/* Chakra Tab */}
+    <TabsContent value="chakra" className="space-y-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>Chakra Information</CardTitle>
+          <CardDescription>
+            Chakra types, reserves, and special abilities
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <ChakraIcon className="h-5 w-5 text-blue-500" />
+              <h3 className="font-semibold">Chakra Nature</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Badge className="bg-yellow-500 hover:bg-yellow-600">
+                Wind
+              </Badge>
+              <Badge className="bg-blue-500 hover:bg-blue-600"> Water </Badge>
+              <Badge className="bg-red-500 hover:bg-red-600"> Fire </Badge>
+              <Badge className="bg-amber-800 hover:bg-amber-900"> Earth </Badge>
+              <Badge className="bg-purple-500 hover:bg-purple-600">
+                Lightning
+              </Badge>
+              <Badge className="bg-orange-500 hover:bg-orange-600">
+                Lava
+              </Badge>
+              <Badge className="bg-emerald-500 hover:bg-emerald-600">
+                Magnet
+              </Badge>
+              <Badge className="bg-cyan-500 hover:bg-cyan-600"> Boil </Badge>
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-semibold">Chakra Reserves</h3>
+            <div className="space-y-4">
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Base Chakra</span>
+                  <span>Enormous</span>
+                </div>
+                <Progress value="{85}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Nine-Tails Chakra</span>
+                  <span>Immense</span>
+                </div>
+                <Progress value="{95}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Six Paths Chakra</span>
+                  <span>Godlike</span>
+                </div>
+                <Progress value="{100}" className="h-2" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-2">Special Chakra Abilities</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Shadow Clone Technique (creates physical copies using chakra)
+              </li>
+              <li>Rasengan (concentrated spinning chakra sphere)</li>
+              <li>Rasenshuriken (wind-nature infused Rasengan)</li>
+              <li>Tailed Beast Mode (full access to Nine-Tails chakra)</li>
+              <li>
+                Six Paths Sage Mode (enhanced sensory abilities and chakra
+                control)
+              </li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+    </TabsContent>
+
+    {/* Abilities Tab */}
+    <TabsContent value="abilities" className="space-y-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>Combat Abilities</CardTitle>
+          <CardDescription>
+            Jutsu, techniques, and combat skills
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div>
+            <h3 className="font-semibold mb-2">Signature Techniques</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Shadow Clone Jutsu</li>
+              <li>Rasengan (and variations)</li>
+              <li>Sage Mode</li>
+              <li>Tailed Beast Bomb</li>
+              <li>Talk no Jutsu</li>
+            </ul>
+          </div>
+
+          <Separator />
+
+          <div className="space-y-2">
+            <h3 className="font-semibold">Combat Stats</h3>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Ninjutsu</span>
+                  <span>5/5</span>
+                </div>
+                <Progress value="{100}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Taijutsu</span>
+                  <span>3.5/5</span>
+                </div>
+                <Progress value="{70}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Genjutsu</span>
+                  <span>2/5</span>
+                </div>
+                <Progress value="{40}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Intelligence</span>
+                  <span>3/5</span>
+                </div>
+                <Progress value="{60}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Strength</span>
+                  <span>3.5/5</span>
+                </div>
+                <Progress value="{70}" className="h-2" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex justify-between">
+                  <span>Speed</span>
+                  <span>3.5/5</span>
+                </div>
+                <Progress value="{70}" className="h-2" />
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </TabsContent>
+
+    {/* History Tab */}
+    <TabsContent value="history" className="space-y-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>Character History</CardTitle>
+          <CardDescription> Background and major life events </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-2">
+            <h3 className="font-semibold">Early Life</h3>
+            <p>
+              Naruto was born to Minato Namikaze, the Fourth Hokage, and Kushina
+              Uzumaki. Shortly after his birth, the Nine-Tailed Fox was sealed
+              within him, and both his parents died protecting the village.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-semibold">Academy Days</h3>
+            <p>
+              Growing up as an orphan, Naruto was ostracized by most of the
+              village due to the Nine-Tails sealed within him. He struggled at
+              the Academy but eventually graduated after learning the Shadow
+              Clone Technique.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-semibold">Team 7</h3>
+            <p>
+              Naruto was placed in Team 7 alongside Sasuke Uchiha and Sakura
+              Haruno, under the leadership of Kakashi Hatake. Their missions and
+              training helped shape Naruto's ninja career.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-semibold">Major Battles</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>vs. Zabuza and Haku</li>
+              <li>vs. Gaara during Chunin Exams</li>
+              <li>vs. Sasuke at Valley of the End</li>
+              <li>vs. Pain</li>
+              <li>Fourth Great Ninja War</li>
+              <li>vs. Kaguya Otsutsuki</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+    </TabsContent>
+  </Tabs>
+
+  <Card>
+    <CardHeader>
+      <CardTitle>Relationships</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <h3 className="font-semibold">Friends & Allies</h3>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="outline"> Sasuke Uchiha (Best Friend/Rival) </Badge>
+            <Badge variant="outline">Sakura Haruno</Badge>
+            <Badge variant="outline">Kakashi Hatake</Badge>
+            <Badge variant="outline">Jiraiya (Mentor)</Badge>
+            <Badge variant="outline">Iruka Umino</Badge>
+            <Badge variant="outline">Konoha 11</Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className="font-semibold">Notable Enemies</h3>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="outline" className="border-red-500 text-red-500">
+              Madara Uchiha
+            </Badge>
+            <Badge variant="outline" className="border-red-500 text-red-500">
+              Pain/Nagato
+            </Badge>
+            <Badge variant="outline" className="border-red-500 text-red-500">
+              Obito Uchiha
+            </Badge>
+            <Badge variant="outline" className="border-red-500 text-red-500">
+              Kaguya Otsutsuki
+            </Badge>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
+<CardContainer>
+  <CardHeader>
+    <CardTitle>Basic Information</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-2">
+    <div className="flex justify-between">
+      <span className="text-muted-foreground">Age</span>
+      <span>17</span>
+    </div>
+    <div className="flex justify-between">
+      <span className="text-muted-foreground">Birthday</span>
+      <span>October 10</span>
+    </div>
+    <div className="flex justify-between">
+      <span className="text-muted-foreground">Height</span>
+      <span>166 cm</span>
+    </div>
+    <div className="flex justify-between">
+      <span className="text-muted-foreground">Weight</span>
+      <span>50.9 kg</span>
+    </div>
+    <div className="flex justify-between">
+      <span className="text-muted-foreground">Blood Type</span>
+      <span>B</span>
+    </div>
+  </CardContent>
+</CardContainer>

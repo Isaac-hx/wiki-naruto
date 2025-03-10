@@ -1,5 +1,5 @@
 import React from "react";
-import { Character } from "../../types/type";
+import { Character } from "../types/type";
 import { Link } from "react-router";
 
 interface CardProps {

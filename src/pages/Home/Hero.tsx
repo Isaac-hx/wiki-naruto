@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchCharacters } from "../../services/api";
 import { Character } from "../../types/type";
-import Card from "./Card";
+import Card from "../../components/Card";
 
 const Hero = () => {
   const [character, setCharacter] = useState<Character>({});
@@ -11,7 +11,6 @@ const Hero = () => {
       try {
         const dataCharacter = await fetchCharacters();
         setCharacter(dataCharacter);
-        console.log(dataCharacter);
       } catch (err) {
         setError(!error);
         console.error(err);
