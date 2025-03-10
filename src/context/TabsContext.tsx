@@ -1,5 +1,5 @@
 import { TabsContextValue } from "../types/type";
-import React, { createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 
 const TabsContext = createContext<TabsContextValue | undefined>(undefined);
 
