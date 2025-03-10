@@ -295,32 +295,16 @@ const CharacterDetail = () => {
             </Tabs>
             <CardContainer>
               <CardHeader>
-                <CardTitle>Relationships</CardTitle>
+                <CardTitle>Debut</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Friends & Allies</h3>
-                    <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
+                    {Object.keys(characterById?.debut || {}).map((value) => (
                       <Badge className="text-white ring-1 bg-black">
-                        Sasuke Uchiha (Best Friend/Rival)
+                        {value}
                       </Badge>
-                      <Badge className="text-white ring-1 bg-black ">
-                        Sakura Haruno
-                      </Badge>
-                      <Badge className="text-white ring-1 bg-black ">
-                        Kakashi Hatake
-                      </Badge>
-                      <Badge className="text-white ring-1 bg-black ">
-                        Jiraiya (Mentor)
-                      </Badge>
-                      <Badge className="text-white ring-1 bg-black ">
-                        Iruka Umino
-                      </Badge>
-                      <Badge className="text-white ring-1 bg-black ">
-                        Konoha 11
-                      </Badge>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>

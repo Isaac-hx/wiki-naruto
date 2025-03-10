@@ -11,7 +11,9 @@ export interface ArrayCharacter {
   };
   natureType?: string[] | null;
   jutsu?: string[] | null;
-  tools?: string[] | undefined;
+  debut?: {
+    [key: string]: string | null;
+  };
 }
 
 export interface Character {
